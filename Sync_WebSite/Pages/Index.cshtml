@@ -1,0 +1,109 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Sync Mine Safety";
+}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+    @*<div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>*@
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="14000">
+            <img src="~/images/carousel/Slide1.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block" style="color: #58585a">
+                <div class="transparentBackground">
+                    <h4>Software Designed for Hard Hats</h4>
+                    <p>If it's not easy to use in the field it's not worth using. We combine the simplicity of pick and click functionality with the sophistication of cutting edge cloud technology to give your crews everything they need stay updated on training, access documents on the fly, and focus on staying safe and productive without worrying about the administrative burden of paperwork. Whether you're online in the office or offline a mile underground, we put everything your supervisors need from the back office in their back pockets.</p>
+                    <a class="btn btn-outline-light" asp-area="" asp-page="/Features">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="14000">
+            <img src="~/images/carousel/Slide2.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="transparentBackground">
+                    <h4>The Digital Power Tool You've Been Waiting For </h4>
+                    <p>You wouldn't trust the tools from 100 years ago to keep your crews safe and productive, so why trust paper to keep your business organized? Give your supervisors the tools they need to train in the field, automatic notifications so they can stay up to date, and the right documentation when and where they need it. Your administrators will have crystal clear visibility into the status of all your processes and nothing will ever get lost or misfiled since all everything can be accessed digitally from any device or printed as needed.</p>
+                    <a class="btn btn-outline-light" asp-area="" asp-page="/Benefits">View Benefits</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="14000">
+            <img src="~/images/carousel/Slide3.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="transparentBackground">
+                    <h4>We've Been There. We've Done That. And We Can Do It For You.</h4>
+                    <p>We're the industry leader in compliance and process automation. We've helped some of the largest mining sites in America operate more efficiently for the better part of a decade so they can focus on safety and efficiency without worrying about the administrative headaches that come along with paperwork. Our cloud based Software as a Service model lets us help mines of any size by providing you always available assistance so we can scale up as you need it</p>
+                    <a class="btn btn-outline-light" asp-area="" asp-page="/ContactUs">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="14000">
+            <img src="~/images/carousel/Slide_tech.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="transparentBackground">
+                    <h4>Sophisticated Technology made Simple</h4>
+                    <p>We combine bleeding edge technology combined with advanced best practices to deliver you truly paperless solutions, real-time supervisor notifications, and offline capabilities to handle trainings and access information in the field. All backed by state of the art Microsoft Azure techology to make sure your data is always safe, secure, and accessible.</p>
+                    <a class="btn btn-outline-light" asp-area="" asp-page="/Technology">Our Technology</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="14000">
+            <img src="~/images/carousel/Slide_Start1.png" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="transparentBackground">
+                    <h4>Getting Started is Easy</h4>
+                    <p>Getting started with Sync Mine Safety is easy. Our always available assistance is there to help you get any existing records or documents as quick as you're ready to do so. We'll help train your administrators, provide you with the support you need, and show you to use our baked in DIY tools so you can move as fast as you're ready without ever feeling rushed.</p>
+                    <a class="btn btn-outline-light" asp-area="" asp-page="/Deployment">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" style="background-color: transparent; border: none" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="background-color: transparent; border: none">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+
+</div>
+
+<div class="container mt-3">
+    <div class="card-deck">
+
+        <div class="card">
+            <img src="~/images/cards/Card_hats.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Amplify Worker Safety</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Get Everyone Home Safe Everyday</h6>
+                <p class="card-text">Your workers rely on their training to keep them safe, and their trainers to deliver the information they need. Free up your trainers and supervisors to do what they do best by making sure they don't get bogged down with paperwork. Let them focus on what's most important: getting everyone home safe everyday.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="~/images/cards/Card_tablet.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Drive Paper out of the Process</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Digitally Transform Training & Compliance</h6>
+                <p class="card-text">Paperwork doesn't make you money and it doesn't keep your workers safe so focus on what does. We're the best in the industry at removing paper from your processes. We can integrate with your existing ERP, HR, or other supporting systems to give you the data you need when you need it and remove the headaches caused by paper.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron mt-3 mb-3">
+        <h2 class="nexaBold syncRed">STICK TO WHAT YOU DO BEST</h2>
+        <p class="lead">In-House Solutions are Destined to Fail</p>
+        <hr class="my-4">
+        <p>Great miners don't want to work at Google. The best software developers don't apply for positions at mines. We've seen countless companies try to develop in-house solutions and the best case scenario is usually a mess of disparate systems trying to talk to each other and never truly achieving the final goal of getting rid of paper and improving productivity or worse - having that developer you hired who is the only one who understands the code take another job leaving you with a system you can't maintain and wasting the time and money you invested. </p>
+        <p> Our system has been battle tested by use in rugged environments for the better part of a decade. We're the experts that can have you up and running quickly, pull data in from your ERP, HR, or any other systems, provide always available assistance to your admins, and bring your new folks up to speed when you have employee turnover. </p>
+    </div>
+
+</div>

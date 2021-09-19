@@ -1,0 +1,26 @@
+﻿/*.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+    color: red;
+}*/
+/*a .nav-link .nav-link-custom {
+    color: purple !important;
+}*/
+@font-face {
+    font-family: 'nexaBold';
+    src: url('../../../../fonts/Nexa-Bold.woff') format('woff');
+}
+.nexaBold {
+    font-family: 'nexaBold';
+}
+
+.transparentBackground {
+    background: rgba(88, 88, 90, .6);
+    color: white;
+    padding:1rem;
+    border-radius:3px;
+}
+
+.syncRed {
+    color: #bf1e2d;
+}
