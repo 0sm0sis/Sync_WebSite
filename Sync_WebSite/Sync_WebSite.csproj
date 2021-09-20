@@ -11,6 +11,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\carousel\" />
     <Folder Include="wwwroot\fonts\" />
+    <Folder Include="wwwroot\images\features\" />
   </ItemGroup>
 
 </Project>

@@ -2,9 +2,43 @@
 @model FeaturesModel
 @{
     ViewData["Title"] = "Benefits by Role";
-}<div class="container">
-    <h1>@ViewData["Title"]</h1>
+}
+<div class="container">
+    <h1 class="nexaBold text-uppercase syncRed mt-3">@ViewData["Title"]</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    <p>Role based benefits.</p>
+    <div class="mt-3">
+        <div class="card-deck">
+
+            <div class="card">
+                <img src="~/images/cards/features/Card_SafetyFirst.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Amplify Worker Safety</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Get Everyone Home Safe Everyday</h6>
+                    <p class="card-text">Your workers rely on their training to keep them safe, and their trainers to deliver the information they need. Free up your trainers and supervisors to do what they do best by making sure they don't get bogged down with paperwork. Let them focus on what's most important: getting everyone home safe everyday.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="~/images/cards/features/Card_Training.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Drive Paper out of the Process</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Digitally Transform Training & Compliance</h6>
+                    <p class="card-text">Paperwork doesn't make you money and it doesn't keep your workers safe so focus on what does. We're the best in the industry at removing paper from your processes. We can integrate with your existing ERP, HR, or other supporting systems to give you the data you need when you need it and remove the headaches caused by paper.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron mt-3 mb-3">
+            <h2 class="nexaBold syncRed">STICK TO WHAT YOU DO BEST</h2>
+            <p class="lead">In-House Solutions are Destined to Fail</p>
+            <hr class="my-4">
+            <p>Great miners don't want to work at Google. The best software developers don't apply for positions at mines. We've seen countless companies try to develop in-house solutions and the best case scenario is usually a mess of disparate systems trying to talk to each other and never truly achieving the final goal of getting rid of paper and improving productivity or worse - having that developer you hired who is the only one who understands the code take another job leaving you with a system you can't maintain and wasting the time and money you invested. </p>
+            <p> Our system has been battle tested by use in rugged environments for the better part of a decade. We're the experts that can have you up and running quickly, pull data in from your ERP, HR, or any other systems, provide always available assistance to your admins, and bring your new folks up to speed when you have employee turnover. </p>
+        </div>
+
+    </div>
 </div>
-
