@@ -2,42 +2,53 @@
 @model FeaturesModel
 @{
     ViewData["Title"] = "Benefits by Role";
-}
+}<script>
+    $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+</script>
 <div class="container">
     <h1 class="nexaBold text-uppercase syncRed mt-3">@ViewData["Title"]</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <div class="mt-3">
-        <div class="card-deck">
-
-            <div class="card">
-                <img src="~/images/cards/features/Card_SafetyFirst.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Amplify Worker Safety</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Get Everyone Home Safe Everyday</h6>
-                    <p class="card-text">Your workers rely on their training to keep them safe, and their trainers to deliver the information they need. Free up your trainers and supervisors to do what they do best by making sure they don't get bogged down with paperwork. Let them focus on what's most important: getting everyone home safe everyday.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Training Admin</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
                 </div>
             </div>
-
-
-            <div class="card">
-                <img src="~/images/cards/features/Card_Training.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Drive Paper out of the Process</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Digitally Transform Training & Compliance</h6>
-                    <p class="card-text">Paperwork doesn't make you money and it doesn't keep your workers safe so focus on what does. We're the best in the industry at removing paper from your processes. We can integrate with your existing ERP, HR, or other supporting systems to give you the data you need when you need it and remove the headaches caused by paper.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <h3 class="card-subtitle mb-2 text-muted">For Training Administrators</h3>
+                        <p>
+                            Sync’s core is to amplify the efforts of Training Administrators in supporting their activities to facilitate great training that continually improves worker safety and competency while ensuring MSHA compliance.
+                            <ul class="list-unstyled">
+                                <li>
+                                    <ul>
+                                        <li>Employee Administration.  Full visibility to each employees organizational roles and act on changes as people are hired, terminate and go on-leave</li>
+                                        <li>List Management.  Easily create and maintain worker lists for campaigns, notifications, MSHA required updates, Annual Refreshers and other needs</li>
+                                        <li>Training Records Management.  Digitally track all training records (eliminate paper processing) with instant access to all training details for all employees and contractors</li>
+                                        <li>Training Scheduling.  Easy collaboration with Trainers, Supervisors and Workers to schedule and track the delivery of all required training</li>
+                                        <li>Standard Operating Procedure.  Integrated administration of critical SOP documents that support safe, competent procedures</li>
+                                        <li>Manage all Training Content required for each Task Code Training to be instantly accessed and presented consistently by the organizations trainers</li>
+                                        <li>Reporting.  Single click reporting on all aspects of training</li>
+                                        <li>Training Programs.  Assemble combinations of trainings for job roles, locations, and types of activities to keep workers growing in their skills and career progression</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2</div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4</div>
                 </div>
             </div>
-        </div>
-
-        <div class="jumbotron mt-3 mb-3">
-            <h2 class="nexaBold syncRed">STICK TO WHAT YOU DO BEST</h2>
-            <p class="lead">In-House Solutions are Destined to Fail</p>
-            <hr class="my-4">
-            <p>Great miners don't want to work at Google. The best software developers don't apply for positions at mines. We've seen countless companies try to develop in-house solutions and the best case scenario is usually a mess of disparate systems trying to talk to each other and never truly achieving the final goal of getting rid of paper and improving productivity or worse - having that developer you hired who is the only one who understands the code take another job leaving you with a system you can't maintain and wasting the time and money you invested. </p>
-            <p> Our system has been battle tested by use in rugged environments for the better part of a decade. We're the experts that can have you up and running quickly, pull data in from your ERP, HR, or any other systems, provide always available assistance to your admins, and bring your new folks up to speed when you have employee turnover. </p>
         </div>
 
     </div>
